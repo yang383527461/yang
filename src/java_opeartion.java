@@ -76,7 +76,7 @@ public class java_opeartion {
                 int q2=(int)((Math.random()*10)+1);     //生成括号 ,>1生成括号
                 int q3=(int)((Math.random()*2));
 
-                if(a==0){
+                if(a==0){                     //生成整数
                     int p1=(int)((Math.random()*n)+1);
                     if(q2>1&&i<q1-2&&i!=1) {
                         list2.add("(");
@@ -97,7 +97,7 @@ public class java_opeartion {
                         }
                     }
                 }
-                if(a==1){
+                if(a==1){                                    //生成分数
                     int p2=(int)((Math.random()*n)+1);
                     int p3=(int)((Math.random()*p2)+1);
                     if(q2>1&&i<q1-2&&i!=1) {
@@ -285,7 +285,7 @@ public class java_opeartion {
 
     void check(String str2){        //检查结果是否正确
         System.out.print("=");
-        String result = sufStack.pop().toString();
+        String result = huajian(sufStack.pop().toString());
        // System.out.println(result);
         while(true) {
             String sum = op.nextLine();
